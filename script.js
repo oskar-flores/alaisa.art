@@ -4,17 +4,17 @@
   // --- Site ---
   document.querySelector('.site-name').textContent = data.site.name;
   document.querySelector('.tagline').textContent = data.site.tagline;
-  document.title = `${data.site.name} — Miniature Painting`;
+  document.title = `${data.site.name} — Pintura de Miniaturas`;
 
   // --- Gallery ---
   const grid = document.querySelector('.gallery-grid');
   const tabsContainer = document.querySelector('.gallery-tabs');
-  const categories = ['All', ...new Set(data.gallery.map(item => item.category))];
+  const categories = ['Todas', ...new Set(data.gallery.map(item => item.category))];
 
   // Build tabs
   categories.forEach(cat => {
     const btn = document.createElement('button');
-    btn.className = 'gallery-tab' + (cat === 'All' ? ' active' : '');
+    btn.className = 'gallery-tab' + (cat === 'Todas' ? ' active' : '');
     btn.textContent = cat;
     btn.setAttribute('role', 'tab');
     btn.addEventListener('click', () => filterGallery(cat));
@@ -49,7 +49,7 @@
     tabsContainer.querySelectorAll('.gallery-tab').forEach(btn => {
       btn.classList.toggle('active', btn.textContent === category);
     });
-    const filtered = category === 'All'
+    const filtered = category === 'Todas'
       ? data.gallery
       : data.gallery.filter(item => item.category === category);
     renderGallery(filtered);

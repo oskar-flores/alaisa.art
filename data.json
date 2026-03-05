@@ -1,16 +1,16 @@
 {
   "site": {
     "name": "Alaisa",
-    "tagline": "Miniature painting with love"
+    "tagline": "Pintura de miniaturas con amor"
   },
   "commissions": {
     "open": true,
-    "messageOpen": "Open for commissions",
-    "messageClosed": "Commissions currently closed"
+    "messageOpen": "Abierta para encargos",
+    "messageClosed": "Encargos cerrados por el momento"
   },
   "about": {
     "image": "images/site/about.svg",
-    "text": "Hello! I'm Alaisa, a miniature painter who brings tiny worlds to life with brush and paint. What started as a hobby has become a passion — each piece is a labor of love, painted with care and attention to every tiny detail."
+    "text": "¡Hola! Soy Alaisa, pintora de miniaturas que da vida a pequeños mundos con pincel y pintura. Lo que empezó como un hobby se ha convertido en una pasión — cada pieza es una obra hecha con amor, pintada con cuidado y atención a cada pequeño detalle."
   },
   "contact": {
     "email": "hello@alaisa.art",
@@ -20,22 +20,22 @@
   },
   "gallery": [
     {
-      "title": "Space Marine Captain",
+      "title": "Capitán Marine Espacial",
       "image": "images/gallery/sample1.svg",
       "category": "Warhammer 40K",
-      "description": "Custom color scheme with NMM gold details"
+      "description": "Esquema de color personalizado con detalles NMM en oro"
     },
     {
       "title": "Stormcast Eternal",
       "image": "images/gallery/sample2.svg",
       "category": "Age of Sigmar",
-      "description": "Ethereal glow effect on the weapon"
+      "description": "Efecto de brillo etéreo en el arma"
     },
     {
-      "title": "Goblin Shaman",
+      "title": "Goblin Chamán",
       "image": "images/gallery/sample3.svg",
       "category": "D&D",
-      "description": "Freehand runes on the staff"
+      "description": "Runas pintadas a mano en el bastón"
     }
   ]
 }
