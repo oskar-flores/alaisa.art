@@ -11,13 +11,34 @@
   const tabsContainer = document.querySelector('.gallery-tabs');
   const categories = ['Todas', ...new Set(data.gallery.map(item => item.category))];
 
+  function staggerItems() {
+    grid.querySelectorAll('.gallery-item').forEach((item, i) => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        item.style.transition = 'opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1)';
+        item.style.opacity = '1';
+        item.style.transform = '';
+      }, 80 * i);
+    });
+  }
+
   // Build tabs
   categories.forEach(cat => {
     const btn = document.createElement('button');
     btn.className = 'gallery-tab' + (cat === 'Todas' ? ' active' : '');
     btn.textContent = cat;
     btn.setAttribute('role', 'tab');
-    btn.addEventListener('click', () => filterGallery(cat));
+    btn.addEventListener('click', () => {
+      tabsContainer.querySelectorAll('.gallery-tab').forEach(b => {
+        b.classList.toggle('active', b.textContent === cat);
+      });
+      const filtered = cat === 'Todas'
+        ? data.gallery
+        : data.gallery.filter(item => item.category === cat);
+      renderGallery(filtered);
+      staggerItems();
+    });
     tabsContainer.appendChild(btn);
   });
 
@@ -45,17 +66,8 @@
     });
   }
 
-  function filterGallery(category) {
-    tabsContainer.querySelectorAll('.gallery-tab').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent === category);
-    });
-    const filtered = category === 'Todas'
-      ? data.gallery
-      : data.gallery.filter(item => item.category === category);
-    renderGallery(filtered);
-  }
-
   renderGallery(data.gallery);
+  staggerItems();
 
   // --- About ---
   const aboutPhoto = document.getElementById('about-photo');
@@ -107,4 +119,20 @@
       grid.querySelectorAll('.gallery-item.expanded').forEach(el => el.classList.remove('expanded'));
     }
   });
+
+  // --- Scroll Reveal ---
+  document.querySelectorAll('section, .about-image, .about-text, .commissions-status, .contact-links').forEach(el => {
+    el.classList.add('reveal');
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 })();

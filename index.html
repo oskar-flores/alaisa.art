@@ -7,21 +7,24 @@
   <meta name="description" content="Portafolio de pintura de miniaturas por Alaisa. Miniaturas pintadas a mano con amor y dedicación.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Hero -->
   <header id="hero">
+    <div class="hero-vignette"></div>
     <div class="hero-content">
+      <p class="hero-pre">~ estudio de ~</p>
       <h1 class="site-name">Alaisa</h1>
+      <div class="hero-flourish">&#10045; &#10045; &#10045;</div>
       <p class="tagline">Miniature painting with love</p>
       <nav class="main-nav">
         <a href="#gallery">Galería</a>
-        <span class="nav-dot">&middot;</span>
+        <span class="nav-dot">&#9830;</span>
         <a href="#about">Sobre mí</a>
-        <span class="nav-dot">&middot;</span>
+        <span class="nav-dot">&#9830;</span>
         <a href="#contact">Contacto</a>
       </nav>
     </div>
@@ -29,14 +32,14 @@
 
   <!-- Gallery -->
   <section id="gallery">
-    <h2 class="section-title">Galería</h2>
+    <h2 class="section-title"><span>Galería</span></h2>
     <div class="gallery-tabs" role="tablist"></div>
     <div class="gallery-grid"></div>
   </section>
 
   <!-- About -->
   <section id="about">
-    <h2 class="section-title">Sobre mí</h2>
+    <h2 class="section-title"><span>Sobre mí</span></h2>
     <div class="about-content">
       <div class="about-image">
         <img src="" alt="Alaisa pintando" id="about-photo">
@@ -47,7 +50,7 @@
 
   <!-- Contact -->
   <section id="contact">
-    <h2 class="section-title">Contacto</h2>
+    <h2 class="section-title"><span>Contacto</span></h2>
     <div class="contact-content">
       <div class="commissions-status" id="commissions"></div>
       <div class="contact-links" id="contact-links"></div>
@@ -56,7 +59,8 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; <span id="year"></span> Alaisa</p>
+    <div class="footer-flourish">&#10087;</div>
+    <p>Hecho con amor &amp; pintura &mdash; &copy; <span id="year"></span> Alaisa</p>
   </footer>
 
   <script src="script.js"></script>
