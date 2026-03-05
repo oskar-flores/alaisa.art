@@ -9,7 +9,7 @@
     "messageClosed": "Commissions currently closed"
   },
   "about": {
-    "image": "images/site/about.jpg",
+    "image": "images/site/about.svg",
     "text": "Hello! I'm Alaisa, a miniature painter who brings tiny worlds to life with brush and paint. What started as a hobby has become a passion — each piece is a labor of love, painted with care and attention to every tiny detail."
   },
   "contact": {
@@ -21,19 +21,19 @@
   "gallery": [
     {
       "title": "Space Marine Captain",
-      "image": "images/gallery/sample1.jpg",
+      "image": "images/gallery/sample1.svg",
       "category": "Warhammer 40K",
       "description": "Custom color scheme with NMM gold details"
     },
     {
       "title": "Stormcast Eternal",
-      "image": "images/gallery/sample2.jpg",
+      "image": "images/gallery/sample2.svg",
       "category": "Age of Sigmar",
       "description": "Ethereal glow effect on the weapon"
     },
     {
       "title": "Goblin Shaman",
-      "image": "images/gallery/sample3.jpg",
+      "image": "images/gallery/sample3.svg",
       "category": "D&D",
       "description": "Freehand runes on the staff"
     }
