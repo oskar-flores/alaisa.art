@@ -1,59 +1,75 @@
 {
-  "site": {
-    "name": "Alaisa",
-    "tagline": "Pintura de miniaturas con amor"
-  },
-  "commissions": {
-    "open": true,
-    "messageOpen": "Abierta para encargos",
-    "messageClosed": "Encargos cerrados por el momento"
-  },
-  "about": {
-    "image": "images/site/about.svg",
-    "text": "¡Hola! Soy Alaisa, pintora de miniaturas que da vida a pequeños mundos con pincel y pintura. Lo que empezó como un hobby se ha convertido en una pasión — cada pieza es una obra hecha con amor, pintada con cuidado y atención a cada pequeño detalle."
-  },
-  "contact": {
-    "email": "hello@alaisa.art",
-    "social": [
-      { "name": "Instagram", "url": "https://instagram.com/alaisa.art", "icon": "instagram" }
+    "site": {
+        "name": "Alaisa",
+        "tagline": "Pintura de miniaturas con amor"
+    },
+    "commissions": {
+        "open": false,
+        "messageOpen": "Abierta para encargos",
+        "messageClosed": "Encargos cerrados por el momento"
+    },
+    "about": {
+        "image": "images/site/about.JPG",
+        "text": "¡Hola! Soy Alaisa, pintora de miniaturas que da vida a pequeños mundos con pincel y pintura. Lo que empezó como un hobby se ha convertido en una pasión. Cada pieza es una obra hecha con amor, pintada con cuidado y atención a cada pequeño detalle."
+    },
+    "contact": {
+        "email": "hello@alaisa.art",
+        "social": [
+            {
+                "name": "Instagram",
+                "url": "https://instagram.com/alaisart",
+                "icon": "instagram"
+            }
+        ]
+    },
+    "gallery": [
+        {
+            "title": "Gigante de Hielo",
+            "image": "images/gallery/bloodrage_ice_gigant.jpg",
+            "category": "Bloodrage",
+            "description": "Miniatura de gigante con temática de hielo"
+        },
+        {
+            "title": "Demonio de Fuego",
+            "image": "images/gallery/bloodrage_fire_gigant.jpg",
+            "category": "Bloodrage",
+            "description": "Miniatura de gigante con temática de fuego"
+        },
+        {
+            "title": "Clérigo",
+            "image": "images/gallery/oathsworn_cleric.jpg",
+            "category": "Oathsworn",
+            "description": "Miniatura de clérigo juramentado"
+        },
+        {
+            "title": "Dríada",
+            "image": "images/gallery/oathsworn_dryad.jpeg",
+            "category": "Oathsworn",
+            "description": "Miniatura de dríada del bosque"
+        },
+        {
+            "title": "Bruja",
+            "image": "images/gallery/oathsworn_wich.jpg",
+            "category": "Oathsworn",
+            "description": "Miniatura de bruja juramentada"
+        },
+        {
+            "title": "Aragorn",
+            "image": "images/gallery/SDLA_aragorn.jpg",
+            "category": "El Señor de los Anillos",
+            "description": "Miniatura del personaje Aragorn"
+        },
+        {
+            "title": "Enano",
+            "image": "images/gallery/sdla_dwwarf.jpg",
+            "category": "El Señor de los Anillos",
+            "description": "Miniatura de enano"
+        },
+        {
+            "title": "Gandalf",
+            "image": "images/gallery/sdla_gandalf.jpg",
+            "category": "El Señor de los Anillos",
+            "description": "Gandalf el Gris, siervo del Fuego Secreto"
+        }
     ]
-  },
-  "gallery": [
-    {
-      "title": "Gigante de Hielo",
-      "image": "images/gallery/bloodrage_ice_gigant.jpg",
-      "category": "Bloodrage",
-      "description": "Miniatura de gigante con temática de hielo"
-    },
-    {
-      "title": "Clérigo",
-      "image": "images/gallery/oathsworn_cleric.jpg",
-      "category": "Oathsworn",
-      "description": "Miniatura de clérigo juramentado"
-    },
-    {
-      "title": "Bruja",
-      "image": "images/gallery/oathsworn_wich.jpg",
-      "category": "Oathsworn",
-      "description": "Miniatura de bruja juramentada"
-    },
-    {
-      "title": "Aragorn",
-      "image": "images/gallery/SDLA_aragorn.jpg",
-      "category": "El Señor de los Anillos",
-      "description": "Miniatura del personaje Aragorn"
-    },
-    {
-      "title": "Enano",
-      "image": "images/gallery/sdla_dwwarf.jpg",
-      "category": "El Señor de los Anillos",
-      "description": "Miniatura de enano"
-    },
-    {
-      "title": "Gandalf",
-      "image": "images/gallery/sdla_gandalf.jpg",
-      "category": "El Señor de los Anillos",
-      "description": "Miniatura del mago Gandalf"
-    }
-  ]
 }
