@@ -20,22 +20,40 @@
   },
   "gallery": [
     {
-      "title": "Capitán Marine Espacial",
-      "image": "images/gallery/sample1.svg",
-      "category": "Warhammer 40K",
-      "description": "Esquema de color personalizado con detalles NMM en oro"
+      "title": "Gigante de Hielo",
+      "image": "images/gallery/bloodrage_ice_gigant.jpg",
+      "category": "Bloodrage",
+      "description": "Miniatura de gigante con temática de hielo"
     },
     {
-      "title": "Stormcast Eternal",
-      "image": "images/gallery/sample2.svg",
-      "category": "Age of Sigmar",
-      "description": "Efecto de brillo etéreo en el arma"
+      "title": "Clérigo",
+      "image": "images/gallery/oathsworn_cleric.jpg",
+      "category": "Oathsworn",
+      "description": "Miniatura de clérigo juramentado"
     },
     {
-      "title": "Goblin Chamán",
-      "image": "images/gallery/sample3.svg",
-      "category": "D&D",
-      "description": "Runas pintadas a mano en el bastón"
+      "title": "Bruja",
+      "image": "images/gallery/oathsworn_wich.jpg",
+      "category": "Oathsworn",
+      "description": "Miniatura de bruja juramentada"
+    },
+    {
+      "title": "Aragorn",
+      "image": "images/gallery/SDLA_aragorn.jpg",
+      "category": "El Señor de los Anillos",
+      "description": "Miniatura del personaje Aragorn"
+    },
+    {
+      "title": "Enano",
+      "image": "images/gallery/sdla_dwwarf.jpg",
+      "category": "El Señor de los Anillos",
+      "description": "Miniatura de enano"
+    },
+    {
+      "title": "Gandalf",
+      "image": "images/gallery/sdla_gandalf.jpg",
+      "category": "El Señor de los Anillos",
+      "description": "Miniatura del mago Gandalf"
     }
   ]
 }
